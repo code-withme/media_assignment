@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="index.css" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+      <title>
+         Email List
+      </title>
+   </head>
+   <body>
+     <div class="container">
+       <div class="app-wrapper">
+         <h1>Email List<h1>
+           <h4>This is an email list, try adding emails here. Its a lot of fun<h4>
+      <div class="email-input-wrapper"><input id="email" placeholder="Email, por favor?" onkeyup="emailLists.validateEmail(event)" class="input"><div class="input-add" id="inputAdd" onclick="emailLists.addEmailClick()">Add Email</div></div>
+      <span class="hidden email-exists" id="exists">This email already exists in our list, please provide a new one</span>
+      <ul id="emailList" class="email-list"></ul>
+      </div>
+      </div>
+   </body>
+   <script src="app.js"></script>
+ </html>
